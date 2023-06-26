@@ -1,0 +1,46 @@
+[{
+        "name": "Albertine Simmonet",
+        "description": " Jeune fille morte aux cheveux brune/blonde.",
+        "image_source": "https://proust-personnages.fr/wp-content/uploads/2012/02/Albertine-1.jpg",
+        "url": "albertine"
+    },
+    {
+        "name": "Mme De Guermantes",
+        "description": " madame aux yeux gris bleu .",
+        "image_source": "https://www.pointdevue.fr//storage/images/article_900/2022/07/BAL_1704656UBqStVeQmA.jpg",
+        "url": "mme-de-guermantes"
+    },
+    {
+        "name": "Bloch",
+        "description": "Thorin II, also called the Oakenshield, King under the Mountain or the Mountain King, was the son of Thráin II, the older brother of Frerin and Dís, the grandson of King Thrór and the uncle of Fíli and Kíli. Thorin was best known for his deeds as leader of a company that infiltrated the lost Kingdom under the Mountain to take it back from Smaug and for leading an alliance of Men, Dwarves, and Elves in the Battle of the Five Armies.",
+        "image_source": "https://i0.wp.com/proustonomics.com/wp-content/uploads/2021/03/559536.jpeg?w=540&ssl=1",
+        "url": "bloch"
+    },
+    {
+        "name": "Mme De Bontemps",
+        "description": "Fíli and Kíli were the two most active dwarves of Thorin's company, and apart from Balin, and possibly Bombur, they appeared more frequently as 'individual' characters in Tolkien's novel than the rest of Thorin's companions, who were most often named only in 'group' references to the entire company.",
+        "image_source": "https://images.gr-assets.com/characters/1382524052p8/43452.jpg",
+        "url": "bontemps"
+
+
+    },
+    {
+        "name": "Gilbertte Swann",
+        "description": "Óin was the older brother of Glóin, cousin of Dwalin and Balin, and uncle of Gimli. He usually wore a brown-hooded cloak when travelling. Óin fought in the Battle of Azanulbizar along with Thorin Oakenshield, and in TA 2941 joined with Thorin and Company on the quest to reclaim the Lonely Mountain wearing a brown hood. Óin was one of the Dwarves who bet that Bilbo would come along with them to reclaim the Lonely Mountain. Óin and his brother Glóin were usually in charge of preparing the fire for the Company. He fought in and survived the Battle of the Five Armies, and later settled in the Lonely Mountain along with many other of the Dwarves of The Company of Thorin such as Bombur.",
+        "image_source": "https://www.unheralded.fish/wp-content/uploads/2017/05/swann.jpg",
+        "url": "gilbertte-swann"
+    },
+    {
+        "name": "Odette De Crecy",
+        "description": "In TA 2799, Glóin was known to have fought in the Battle of Azanulbizar, the last battle of the War of the Dwarves and Orcs. In TA 2941, Glóin and his brother Óin, along with his cousins Dwalin and Balin, were among the Dwarves accompanying Thorin and Company during their quest to the Lonely Mountain to recapture it from the Dragon Smaug. He was noted for his skills with a tinderbox, and, along with his brother Óin, was usually the one told to get a fire started whenever the Dwarves made camp. Gloin also fought in the Battle of the Five Armies. After the battle, he settled in the Lonely Mountain.",
+        "image_source": "https://scontent.fgse1-1.fna.fbcdn.net/v/t39.30808-6/280610560_10158918065205544_4238002763224336513_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=0debeb&_nc_ohc=3xQ8Gywx7VEAX-tfcmI&_nc_ht=scontent.fgse1-1.fna&oh=00_AfAAualzGgIZCUsQrXonWCzBx7lFGjZevN7iIr4FW7yI0A&oe=649EB54B",
+        "url": "odette"
+    },
+    {
+        "name": "Robert Du Saint Loup",
+        "description": "Balin was a Dwarf, son of Fundin, and likely born in the Lonely Mountain before the coming of Smaug the Dragon. He had a younger brother named Dwalin and was one of those driven from their homes when the dragon Smaug attacked the Lonely Mountain. Afterwards he may have lived in Dunland as a refugee. He fought in the War of the Dwarves and Orcs. Many years later, in approximately TA 2841, he accompanied Thráin II, the father of Thorin, when he attempted to go back to the Lonely Mountain himself, but Thráin was captured and lost.",
+        "image_source": "https://upload.wikimedia.org/wikipedia/commons/0/01/Armand_duc_de_Guiche_1900.jpg",
+        "url": "robert-du-saint-loup"
+    }
+
+]

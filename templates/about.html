@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
-<h2> A Propos </h2>
+
+
+<h2> {{page_title}} </h2>
 <p> Mais, je ne suis pas pressé, Madame, répondis-je ; d’ailleurs j’attends M. de Charlus avec qui je dois m’en
     aller.Mme de Villeparisis entendit ces derniers mots. Elle en parut contrariée. S’il ne s’était agi d’une chose qui
     ne pouvait intéresser un sentiment de cette nature, il m’eût paru que ce qui me semblait en alarme à ce moment-là
@@ -14,67 +16,41 @@
     d’un air préoccupé, il cause avec M. de Faffenheim. Il ne pense déjà plus à ce qu’il vous a dit. Tenez, partez,
     profitez vite pendant qu’il a le dos tourné.
 </p>
-<div class="row featurette">
-    <div class="col-md-7">
-        <h3>Albertine Simonet</h3>
-        <p>
-            Orpheline, elle a été élevée par sa tante Mme Bontemps qui fait partie de la bourgeoisie, M. Bontemps est
-            conseiller d’ambassade.C’est une jeune fille aux cheveux bruns et épais, aux yeux verts, bleus ou violets.
-            Elle a de grosses joues et «un petit nez rose de chatte ».
-            Elle a un grain de beauté que le narrateur ne sait pas situer précisément. Elle
-            est intelligente mais le narrateur la trouve parfois mal élevée et impertinente.
-            //
-            A partir de cet après-midi-là, moi, qui les jours précédents avais surtout pensé à la grande, ce fut celle
-            aux
-            clubs de golf, présumée être Mlle Simonet qui recommença à me préoccuper. Au milieu des autres, elle
-            s’arrêtait
-            souvent, forçant ses amies qui semblaient la respecter beaucoup à interrompre aussi leur marche. C’est
-            ainsi,
-            faisant halte, les yeux brillants sous son « polo » que je la revois encore maintenant silhouettée sur
-            l’écran
-            que lui fait, au fond, la mer, et séparée de moi par un espace transparent et azuré, le temps écoulé depuis
-            lors, première image, toute mince dans mon souvenir, désirée, poursuivie, puis oubliée, puis retrouvée, d’un
-            visage que j’ai souvent depuis projeté dans le passé pour pouvoir me dire d’une jeune fille qui était dans
-            ma
-            chambre : « c’est elle ! »
 
-        </p>
+{% for member in company %}
+<div class="row featurette">
+
+    {% if loop.index % 2 != 0 %}
+
+    <div class="col-md-7">
+        <h3><a href="/about/{{ member.url }}">{{ loop.index }}. {{ member.name }}</a></h3>
+        <p>{{ member.description }}</p>
     </div>
+    <div class="col-md-5">
+        <img src="{{ member.image_source }}" alt="" class="featurette-image image-responsive">
+    </div>
+
+    {% else %}
 
     <div class="col-md-5">
-        <img src="https://proust-personnages.fr/wp-content/uploads/2012/02/Albertine-1.jpg" alt="albertine">
+        <img src="{{ member.image_source }}" alt="" class="featurette-image image-responsive">
+    </div>
+    <div class="col-md-7">
+        <h3><a href="/about/{{ member.url }}">{{ loop.index }}. {{ member.name }}</a></h3>
+        <p>{{ member.description }}</p>
     </div>
 
-    <div class="row featurette">
-        <div class="col-md-5">
-            <img src="https://erikgveld.files.wordpress.com/2015/02/madame-standish-photo-de-nadar-rmn-modc3a8le-de-la-duchesse-de-guermantes-pour-proust.jpg"
-                alt="">
-        </div>
+    {% endif %}
 
-        <div class="col-md-7">
-            <h3>Mme De Guermantes</h3>
-            <p>
-                Si alors passait la princesse de Guermantes, belle et légère comme Diane,
-                laissant traîner derrière elle un
-                manteau incomparable,
-                faisant se détourner toutes les têtes et suivie par tous les yeux
-                (par ceux de Mme de Cambremer plus que par tous les autres)
+</div>
+
+{% if loop.index != loop.length %}
+
+<hr class="featurette-divider">
+
+{% endif %}
+
+{% endfor %}
 
 
-                //
-
-                Je faisais la queue derrière quelques invités arrivés plus tôt que moi. J’avais en face de moi la
-                princesse, de laquelle la beauté ne me fait pas seule sans doute, entre tant d’autres, souvenir de cette
-                fête-là. Mais ce visage de la maîtresse de maison était si parfait, était frappé comme une si belle
-                médaille, qu’il a gardé pour moi une vertu commémorative. (SG 636).L’huissier me demanda mon nom, je le
-                lui
-                dis aussi machinalement que le condamné à mort se laisse attacher au billot. Il leva aussitôt
-                majestueusement la tête et, avant que j’eusse pu le prier de m’annoncer à mi-voix pour ménager mon
-                amour-propre si je n’étais pas invité, et celui de la princesse de Guermantes si je l’étais, il hurla
-                les
-                syllabes inquiétantes avec une force capable d’ébranler la voûte de l’hôtel
-            </p>
-        </div>
-    </div>
-
-    {% endblock %}
+{% endblock %}
